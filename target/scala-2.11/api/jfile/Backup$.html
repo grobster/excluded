@@ -161,8 +161,8 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="jfile.Backup#arrToList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">returns D drive letter string.</p>
+    </li><li name="jfile.Backup#arrToList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="arrToList(p:java.nio.file.Path):List[java.nio.file.Path]"></a>
       <a id="arrToList(Path):List[Path]"></a>
       <h4 class="signature">
@@ -178,7 +178,13 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">This function takes a java.nio.file.Path and convert it to
+a list.</p><div class="fullcomment"><div class="comment cmt"><p>This function takes a java.nio.file.Path and convert it to
+a list.  It first checks that file exists.  Then it checks
+that the path is a directory.  Last it checks that directory
+converted to an array doesn't return null.  If any of these
+conditions are not true, an empty list is returned.
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -212,7 +218,8 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Backup folder name
+</p>
     </li><li name="jfile.Backup#cDriveExcludedDirectory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="cDriveExcludedDirectory:String"></a>
       <a id="cDriveExcludedDirectory:String"></a>
@@ -229,7 +236,7 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Creates backup directory on C drive.</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -269,7 +276,7 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Determines backup location.</p>
     </li><li name="jfile.Backup#createDirectory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createDirectory(p:java.nio.file.Path):Either[Exception,java.nio.file.Path]"></a>
       <a id="createDirectory(Path):Either[Exception,Path]"></a>
@@ -286,7 +293,7 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Creates a directory or returns an exception if thrown.</p>
     </li><li name="jfile.Backup#dDriveExcludedDirectory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dDriveExcludedDirectory:String"></a>
       <a id="dDriveExcludedDirectory:String"></a>
@@ -303,7 +310,7 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Creates backup directory on D drive.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -480,7 +487,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="jfile.Backup#scan" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="jfile.Backup#scan" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="scan(dir:java.nio.file.Path):List[java.nio.file.Path]"></a>
       <a id="scan(Path):List[Path]"></a>
       <h4 class="signature">
@@ -496,7 +503,10 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">This function returns a List of type java.nio.file.Path.</p><div class="fullcomment"><div class="comment cmt"><p>This function returns a List of type java.nio.file.Path.
+ It is a recursive function that will search a directory for files.
+ It is tail safe.
+</p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
