@@ -67,10 +67,3 @@ object Backup {
 		println(backupDirectory)
 	}
 }
-
-object Zipper {
-	import java.util.zip._
-	import java.io._
-	
-	def zip(file: Path): Unit = {}
-}

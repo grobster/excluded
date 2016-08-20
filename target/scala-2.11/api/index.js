@@ -1,1 +1,1 @@
-Index.PACKAGES = {"util" : [{"object" : "util\/Backup$.html", "name" : "util.Backup"}, {"object" : "util\/Zipper$.html", "name" : "util.Zipper"}]};
+Index.PACKAGES = {"com" : [], "com.grobster" : [], "com.grobster.util" : [{"class" : "com\/grobster\/util\/Zipper.html", "name" : "com.grobster.util.Zipper"}], "util" : [{"object" : "util\/Backup$.html", "name" : "util.Backup"}]};
