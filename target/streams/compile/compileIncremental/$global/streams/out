@@ -1,8 +1,8 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set(C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
@@ -17,13 +17,20 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.11\classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.8[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.8[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 28eb763, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 75da51ef, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes;C:\Users\quarl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.11\classes[0m
-[0m[[0mdebug[0m] [0mScala compilation took 4.65696192 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 4.782103604 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, backupToDirectory, arrToList, wait, $asInstanceOf, zip, D_DRIVE, equals, createBackupLocation, asInstanceOf, synchronized, $isInstanceOf, scan, main, Zipper, notifyAll, isInstanceOf, ==, clone, toString, createDirectory, !=, getClass, dDriveExcludedDirectory, Backup, ne, eq, ##, cDriveExcludedDirectory, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m

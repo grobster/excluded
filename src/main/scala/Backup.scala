@@ -1,4 +1,4 @@
-package jfile
+package util
 
 import java.io._
 import java.nio.file._
@@ -66,5 +66,11 @@ object Backup {
 		val backupDirectory = createBackupLocation(Paths.get("D:\\"), Paths.get(cDriveExcludedDirectory))
 		println(backupDirectory)
 	}
+}
+
+object Zipper {
+	import java.util.zip._
+	import java.io._
 	
+	def zip(file: Path): Unit = {}
 }

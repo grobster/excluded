@@ -4,3 +4,13 @@ compile
 doc
 compile
 doc
+settings
+compile
+doc
+clean
+compile
+doc
+run
+clean
+compile
+doc
