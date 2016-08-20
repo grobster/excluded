@@ -1,2 +1,4 @@
 scalaDirectory
 scalaSource
+compile
+doc
