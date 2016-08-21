@@ -78,8 +78,11 @@ object Backup {
 		createBackupLocation(Paths.get(D_DRIVE), Paths.get(cDriveExcludedDirectory))
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
+		val testPath1 = Paths.get("C:\\Users\\quarl\\Documents\\GitHub\\excluded\\target\\scala-2.12.0-M4\\classes\\util\\Backup.class")
+		println(testPath1.getParent)
 		//val zipper = new Zipper
 		//Zipper.zipDirectory("C:\\Users\\quarl\\Documents\\Outlook Files\\", "C:\\Users\\quarl\\Documents\\", "", -1)
-		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst")).map(f => println(f))
+		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
+			.map(f => Zipper.zipDirectory(f.getParent.toString, backLocation.toString, ".pst", -1))
 	}
 }

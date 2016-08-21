@@ -3,16 +3,16 @@
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.0-M4.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-4 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-4 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-7 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-7 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-142[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-142[0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-143[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-143[0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-144[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-144[0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-145[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-145[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-154[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-154[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-156[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-156[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-155[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-155[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-153[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-153[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

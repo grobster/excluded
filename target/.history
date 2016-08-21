@@ -56,3 +56,10 @@ doc
 compile
 doc
 exit
+run
+compile
+run
+compile
+run
+compile
+exit
