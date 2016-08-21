@@ -61,9 +61,17 @@ object Backup {
 	  */
 	def createBackupLocation(other: Path, defaultDir: Path) = if(Files.exists(other)) createDirectory(Paths.get(dDriveExcludedDirectory)) else
 		createDirectory(defaultDir)
+		
+	def returnBackupLocation(a: Path, b: Path): Path = if(Files.exists(a)) a else b
 	
 	def main(args: Array[String]): Unit = {		
-		val backupDirectory = createBackupLocation(Paths.get("D:\\"), Paths.get(cDriveExcludedDirectory))
-		println(backupDirectory)
+		import com.grobster.util._
+		
+		
+		createBackupLocation(Paths.get("D:\\"), Paths.get(cDriveExcludedDirectory))
+		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
+		println("the backup location: " + backLocation)
+		val zipper = new Zipper
+		Zipper.zipDirectory("C:\\Users\\quarl\\Documents\\Outlook Files\\", "C:\\Users\\quarl\\Documents\\", "", -1)
 	}
 }

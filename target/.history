@@ -20,3 +20,13 @@ compile
 clean
 compile
 doc
+compile
+doc
+compile
+run
+compile
+run
+compile
+run
+compile
+run
