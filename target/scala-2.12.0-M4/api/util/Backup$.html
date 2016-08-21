@@ -336,6 +336,26 @@ conditions are not true, an empty list is returned.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="util.Backup#copyFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyFile(from:java.nio.file.Path,to:java.nio.file.Path):Either[Exception,java.nio.file.Path]"></a><a id="copyFile(Path,Path):Either[Exception,Path]"></a>
+      <span class="permalink">
+      <a href="../util/Backup$.html#copyFile(from:java.nio.file.Path,to:java.nio.file.Path):Either[Exception,java.nio.file.Path]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyFile</span><span class="params">(<span name="from">from: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="to">to: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Exception">Exception</span>, <span class="extype" name="java.nio.file.Path">Path</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">This function takes two java.nio.file.Path objects, and copies
+one Path from one location to the other.</p><div class="fullcomment"><div class="comment cmt"><p>This function takes two java.nio.file.Path objects, and copies
+one Path from one location to the other.
+It returns either the new Path location or an Exception if thrown.
+</p></div></div>
     </li><li name="util.Backup#createBackupLocation" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createBackupLocation(other:java.nio.file.Path,defaultDir:java.nio.file.Path):Either[Exception,java.nio.file.Path]"></a><a id="createBackupLocation(Path,Path):Either[Exception,Path]"></a>
       <span class="permalink">

@@ -50,3 +50,6 @@ reload
 compile
 run
 doc
+compile
+run
+doc

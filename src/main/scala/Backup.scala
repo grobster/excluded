@@ -64,6 +64,13 @@ object Backup {
 		
 	def returnBackupLocation(a: Path, b: Path): Path = if(Files.exists(a)) a else b
 	
+	/** This function takes two java.nio.file.Path objects, and copies
+	  * one Path from one location to the other.
+	  * It returns either the new Path location or an Exception if thrown.
+	  */
+	def copyFile(from: Path, to: Path): Either[Exception, Path] = try Right(Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING)) 
+		catch { case e: Exception => Left(e)}
+	
 	def main(args: Array[String]): Unit = {		
 		import com.grobster.util._
 		
