@@ -68,10 +68,11 @@ object Backup {
 		import com.grobster.util._
 		
 		
-		createBackupLocation(Paths.get("D:\\"), Paths.get(cDriveExcludedDirectory))
+		createBackupLocation(Paths.get(D_DRIVE), Paths.get(cDriveExcludedDirectory))
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
-		val zipper = new Zipper
-		Zipper.zipDirectory("C:\\Users\\quarl\\Documents\\Outlook Files\\", "C:\\Users\\quarl\\Documents\\", "", -1)
+		//val zipper = new Zipper
+		//Zipper.zipDirectory("C:\\Users\\quarl\\Documents\\Outlook Files\\", "C:\\Users\\quarl\\Documents\\", "", -1)
+		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst")).map(f => println(f))
 	}
 }

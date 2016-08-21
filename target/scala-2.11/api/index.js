@@ -1,1 +1,1 @@
-Index.PACKAGES = {"com" : [], "com.grobster" : [], "com.grobster.util" : [{"class" : "com\/grobster\/util\/Zipper.html", "name" : "com.grobster.util.Zipper"}], "util" : [{"object" : "util\/Backup$.html", "name" : "util.Backup"}]};
+Index.PACKAGES = {"com" : [], "com.grobster" : [], "com.grobster.util" : [{"class" : "com\/grobster\/util\/FileNamer.html", "name" : "com.grobster.util.FileNamer"}, {"class" : "com\/grobster\/util\/Zipper.html", "name" : "com.grobster.util.Zipper"}], "util" : [{"object" : "util\/Backup$.html", "name" : "util.Backup"}]};
