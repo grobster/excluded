@@ -53,3 +53,6 @@ doc
 compile
 run
 doc
+compile
+doc
+exit
