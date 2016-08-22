@@ -70,18 +70,23 @@ object Backup {
 	  */
 	def copyFile(from: Path, to: Path): Either[Exception, Path] = try Right(Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING)) 
 		catch { case e: Exception => Left(e)}
+		
+	/**
+	  * General purpose function to convert from an exception-based API to an Option-oriented API.
+	  */	
+	def Try[A](a: => A): Option[A] = {
+		try Some(a) catch { case e: Exception => None }
+	}
 	
 	def main(args: Array[String]): Unit = {		
 		import com.grobster.util._
 		
-		
 		createBackupLocation(Paths.get(D_DRIVE), Paths.get(cDriveExcludedDirectory))
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
-		val testPath1 = Paths.get("C:\\Users\\quarl\\Documents\\GitHub\\excluded\\target\\scala-2.12.0-M4\\classes\\util\\Backup.class")
-		println(testPath1.getParent)
-		//val zipper = new Zipper
-		//Zipper.zipDirectory("C:\\Users\\quarl\\Documents\\Outlook Files\\", "C:\\Users\\quarl\\Documents\\", "", -1)
+		val numResult = Try(9 + 4)
+		println("Adding result: " + numResult)
+
 		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
 			.map(f => Zipper.zipDirectory(f.getParent.toString, backLocation.toString, ".pst", -1))
 	}

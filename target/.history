@@ -63,3 +63,11 @@ compile
 run
 compile
 exit
+compile
+doc
+compile
+doc
+compile
+run
+compile
+run
