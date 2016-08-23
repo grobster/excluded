@@ -84,10 +84,9 @@ object Backup {
 		createBackupLocation(Paths.get(D_DRIVE), Paths.get(cDriveExcludedDirectory))
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
-		val numResult = Try(9 + 4)
-		println("Adding result: " + numResult)
+		
 
-		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
-			.map(f => Zipper.zipDirectory(f.getParent.toString, backLocation.toString, ".pst", -1))
+		//scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
+			//.map(f => Zipper.zipDirectory(f.getParent.toString, backLocation.toString, ".pst", -1))
 	}
 }
