@@ -87,3 +87,7 @@ compile
 run
 compile
 doc
+compile
+doc
+compile
+exit
