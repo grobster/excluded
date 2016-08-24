@@ -91,3 +91,6 @@ compile
 doc
 compile
 exit
+run
+compile
+doc

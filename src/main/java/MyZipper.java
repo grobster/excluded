@@ -6,7 +6,7 @@ import java.util.zip.*;
 public class MyZipper {
 	final public static int BUFFER = 1024 * 4;
 	
-	public static void zip(String in, String out) {
+	public static void zipFile(String in, String out) {
 		try {
 			BufferedInputStream bis = null;
 			FileOutputStream fos = new FileOutputStream(out);
@@ -36,7 +36,7 @@ public class MyZipper {
 	
 	public static void main(String[] args) {
 		String fileIn = "C:\\Users\\quarl\\Documents\\jefftoday.txt";
-		String fileOUt = "C:\\Users\\quarl\\Documents\\jefftoday.zip";
-		zip(fileIn, fileOUt);
+		String fileOut = "C:\\Users\\quarl\\Documents\\jefftoday.zip";
+		zipFile(fileIn, fileOut);
 	}
 }
