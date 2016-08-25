@@ -86,7 +86,7 @@ object Backup {
 		println("the backup location: " + backLocation)
 		
 
-		//scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
-			//.map(f => Zipper.zipDirectory(f.getParent.toString, backLocation.toString, ".pst", -1))
+		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
+			.map(f => MyZipper.zipFile(f.toString, backLocation.toString + System.getProperty("file.separator") + MyFiles.stripExtension(f.getFileName.toString) + ".zip"))
 	}
 }

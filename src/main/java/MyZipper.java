@@ -4,8 +4,14 @@ import java.io.*;
 import java.util.zip.*;
 
 public class MyZipper {
-	final public static int BUFFER = 1024 * 4;
+	public static int BUFFER = 1024 * 4;
+	final public static int MIN_BUFFER = 2;
+	final public static int MED_BUFFER = 4;
+	final public static int MAX_BUFFER = 8;
 	
+	/**
+	  * Zips a file.
+	  */
 	public static void zipFile(String in, String out) {
 		try {
 			BufferedInputStream bis = null;
@@ -32,11 +38,5 @@ public class MyZipper {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-	}
-	
-	public static void main(String[] args) {
-		String fileIn = "C:\\Users\\quarl\\Documents\\jefftoday.txt";
-		String fileOut = "C:\\Users\\quarl\\Documents\\jefftoday.zip";
-		zipFile(fileIn, fileOut);
 	}
 }

@@ -5,18 +5,28 @@
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-assembly;0.11.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.eed3si9n#sbt-assembly;0.11.2[0m
+[0m[[0mdebug[0m] [0m	found com.eed3si9n#sbt-assembly;0.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@668c18b6[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9b00ef[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.6] org.scala-lang#scala-library;2.10.6[0m
@@ -863,6 +873,8 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
@@ -1489,12 +1501,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [test-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#excluded-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
@@ -2168,6 +2184,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#excluded-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.11.2!sbt-assembly.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.11!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.11!main.jar[0m
@@ -2221,7 +2238,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3196ms :: artifacts dl 89ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2169ms :: artifacts dl 101ms[0m
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT compile produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT runtime produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT test produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-test.xml[0m
@@ -2235,5 +2252,5 @@
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT docs produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT pom produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#excluded-build;0.1-SNAPSHOT scala-tool produced in C:\Users\quarl\Documents\GitHub\excluded\project\target\resolution-cache\reports\default-excluded-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3196ms resolve - 89ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2169ms resolve - 101ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

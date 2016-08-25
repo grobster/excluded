@@ -14,10 +14,10 @@
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\quarl\Documents\GitHub\excluded\src\main\java\MyZipper.java)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Java source to C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes...[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@4fb531e9 directly...[0m
-[0m[[0mdebug[0m] [0mJava compilation took 0.067196057 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.015638246 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 0.0873263 s[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@4a643cdb directly...[0m
+[0m[[0mdebug[0m] [0mJava compilation took 0.045249225 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.010335455 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 0.058483829 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
