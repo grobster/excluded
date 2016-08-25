@@ -128,3 +128,6 @@ compile
 doc
 exit
 clean
+compile
+doc
+assembly
