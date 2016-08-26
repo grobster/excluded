@@ -135,3 +135,5 @@ exit
 compile
 clean
 compile
+doc
+compile
