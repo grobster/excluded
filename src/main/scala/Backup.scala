@@ -85,8 +85,7 @@ object Backup {
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
 		
-
-		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst"))
+		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst")).filter(fp => Files.isWritable(fp))
 			.map(f => MyZipper.zipFile(f.toString, backLocation.toString + System.getProperty("file.separator") + MyFiles.stripExtension(f.getFileName.toString) + ".zip"))
 	}
 }
