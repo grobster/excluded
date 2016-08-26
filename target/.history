@@ -137,3 +137,5 @@ clean
 compile
 doc
 compile
+run
+compile
