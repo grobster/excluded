@@ -133,3 +133,5 @@ doc
 assembly
 exit
 compile
+clean
+compile
