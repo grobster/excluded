@@ -1,5 +1,7 @@
 package com.grobster.util;
 
+import java.io.File;
+
 public class MyFiles {
 	public static String stripExtension (String str) {
         // Handle null case specially.
@@ -18,5 +20,9 @@ public class MyFiles {
 
         return str.substring(0, pos);
     }
+	
+	public static boolean isNotLocked (File f) {
+		return f.renameTo(f);
+	}
 	
 }
