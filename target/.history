@@ -144,3 +144,5 @@ compile
 run
 exit
 run
+reload
+compile

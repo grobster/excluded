@@ -1,8 +1,9 @@
 import AssemblyKeys._
+
 assemblySettings
 
-name := "File Buddy"
+name := "PST Zipper"
 organization := "org.grobster"
-version := "1.0.0"
+version := "1.0.1"
 scalaVersion := "2.12.0-M4"
 
