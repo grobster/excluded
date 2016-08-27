@@ -147,3 +147,10 @@ run
 reload
 compile
 doc
+run
+assembly
+package
+compile
+run
+compile
+doc

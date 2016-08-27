@@ -78,6 +78,19 @@ object Backup {
 		try Some(a) catch { case e: Exception => None }
 	}
 	
+	/**
+	  * This function takes a directory and its filter file type and returns
+	  * a compressed file of type specified in zipFileEnding to the location
+	  * specified in zipLocation.
+	  */
+	def safeZip(dir: Path, fileEndingFilter: String, zipLocation: Path, zipFileEnding: String): Unit = {
+		import com.grobster.util._
+		val onlyFileType = scan(dir).par.filter(_.toString.endsWith(fileEndingFilter))
+		val unlockedFiles = onlyFileType.par.filter(fp => MyFiles.isNotLocked(fp.toFile))
+		unlockedFiles.par.map(f => MyZipper.zipFile(f.toString, zipLocation.toString + System.getProperty("file.separator") + 
+			MyFiles.stripExtension(f.getFileName.toString) + zipFileEnding))
+	}
+	
 	def main(args: Array[String]): Unit = {		
 		import com.grobster.util._
 		
@@ -85,7 +98,9 @@ object Backup {
 		val backLocation = returnBackupLocation(Paths.get(cDriveExcludedDirectory), Paths.get(dDriveExcludedDirectory))
 		println("the backup location: " + backLocation)
 		
-		scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst")).filter(fp => MyFiles.isNotLocked(fp.toFile))
-			.map(f => MyZipper.zipFile(f.toString, backLocation.toString + System.getProperty("file.separator") + MyFiles.stripExtension(f.getFileName.toString) + ".zip"))
+		//scan(Paths.get(System.getProperty("user.home"))).par.filter(_.toString.endsWith(".pst")).filter(fp => MyFiles.isNotLocked(fp.toFile))
+			//.map(f => MyZipper.zipFile(f.toString, backLocation.toString + System.getProperty("file.separator") + MyFiles.stripExtension(f.getFileName.toString) + ".zip"))
+		val userProfile = Paths.get(System.getProperty("user.home"))
+		safeZip(userProfile, ".pst", backLocation, ".zip")
 	}
 }
