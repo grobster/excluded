@@ -6,10 +6,11 @@
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes;C:\Users\quarl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.0-M4.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	dummy_2d578b2a[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\jfxrt.jar;C:\Users\quarl\.ivy2\cache\org.scalafx\scalafx_2.12.0-M4\jars\scalafx_2.12.0-M4-8.0.92-R10.jar;C:\Users\quarl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.0-M4.jar[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\java\FileNamer.java[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\java\MyFiles.java[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\java\MyZipper.java[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\Backup.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\FileFinder.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\quarl\Documents\GitHub\excluded\src\main\scala\TestGui.scala[0m
 [0m[[0minfo[0m] [0mMain Scala API documentation successful.[0m

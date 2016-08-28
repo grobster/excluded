@@ -13,10 +13,12 @@ public class MyZipper {
 	  * Zips a file.
 	  */
 	public static void zipFile(String in, String out) {
+		BufferedInputStream bis = null;
+		ZipOutputStream zos = null;
+		
 		try {
-			BufferedInputStream bis = null;
 			FileOutputStream fos = new FileOutputStream(out);
-			ZipOutputStream zos = new ZipOutputStream(new BufferedOutputStream(fos));
+			zos = new ZipOutputStream(new BufferedOutputStream(fos));
 			zos.setMethod(ZipOutputStream.DEFLATED);
 			
 			byte data[] = new byte[BUFFER];
@@ -30,13 +32,17 @@ public class MyZipper {
 			while((count = bis.read(data, 0, BUFFER)) != -1 ) {
 				zos.write(data, 0, count);
 			}
-			//zos.closeEntry();
-			bis.close();
-			
-			zos.close();
 			
 		} catch (Exception ex) {
 			ex.printStackTrace();
+		} finally {
+			try {
+				bis.close();
+				zos.close();
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+			
 		}
 	}
 }

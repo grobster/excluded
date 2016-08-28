@@ -522,22 +522,6 @@ It returns either the new Path location or an Exception if thrown.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="util.Backup#main" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="main(args:Array[String]):Unit"></a><a id="main(Array[String]):Unit"></a>
-      <span class="permalink">
-      <a href="../util/Backup$.html#main(args:Array[String]):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">main</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -603,9 +587,9 @@ It returns either the new Path location or an Exception if thrown.
       
       
     </li><li name="util.Backup#safeZip" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path,zipFileEnding:String):Unit"></a><a id="safeZip(Path,String,Path,String):Unit"></a>
+      <a id="safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit"></a><a id="safeZip(Path,String,Path)(String):Unit"></a>
       <span class="permalink">
-      <a href="../util/Backup$.html#safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path,zipFileEnding:String):Unit" title="Permalink">
+      <a href="../util/Backup$.html#safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -614,7 +598,7 @@ It returns either the new Path location or an Exception if thrown.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">safeZip</span><span class="params">(<span name="dir">dir: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="fileEndingFilter">fileEndingFilter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="zipLocation">zipLocation: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="zipFileEnding">zipFileEnding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">safeZip</span><span class="params">(<span name="dir">dir: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="fileEndingFilter">fileEndingFilter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="zipLocation">zipLocation: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="zipFileEnding">zipFileEnding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <p class="shortcomment cmt">This function takes a directory and its filter file type and returns
@@ -737,6 +721,22 @@ specified in zipLocation.</p>
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="util.Backup#zipEnding" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="zipEnding:String"></a>
+      <span class="permalink">
+      <a href="../util/Backup$.html#zipEnding:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zipEnding</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
     </li>
               </ol>
             </div>

@@ -1,0 +1,21 @@
+[0m[[0minfo[0m] [0mPackaging C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\pst-zipper_2.12.0-M4-1.0.1.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	com[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com[0m
+[0m[[0mdebug[0m] [0m	com\grobster\util\FileNamer.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com\grobster\util\FileNamer.class[0m
+[0m[[0mdebug[0m] [0m	com\grobster\util[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com\grobster\util[0m
+[0m[[0mdebug[0m] [0m	util\Backup.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\util\Backup.class[0m
+[0m[[0mdebug[0m] [0m	util\Backup$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\util\Backup$.class[0m
+[0m[[0mdebug[0m] [0m	com\grobster\util\MyZipper.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com\grobster\util\MyZipper.class[0m
+[0m[[0mdebug[0m] [0m	com\grobster\util\MyFiles.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com\grobster\util\MyFiles.class[0m
+[0m[[0mdebug[0m] [0m	com\grobster[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\com\grobster[0m
+[0m[[0mdebug[0m] [0m	util[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\classes\util[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
