@@ -12,6 +12,7 @@ import util._
 import java.io._
 
 object TestGui {
+	/*
 	def main(args: Array[String]): Unit = {
 		
 		
@@ -83,11 +84,12 @@ object TestGui {
 					zipButton.layoutX = 325
 					zipButton.layoutY = 470
 					zipButton.onAction = handle {
+						zippedFilesArea.text = ""
 						val stringsToPaths = pstFiles.map(s => Paths.get(s)); println(stringsToPaths)
-						val location = label1.getText
+						val location = Paths.get(label1.getText)
 						val fileType = ".pst"
-						stringsToPaths.map(p => Backup.safeZip(p, fileType, Paths.get(location)))
-						zippedFiles = new File(location).listFiles.toList.map(p => p.toString)
+						stringsToPaths.map(p => Backup.safeZip(p, fileType, location))
+						zippedFiles = Backup.arrToList(location).map(p => p.toString)
 						zippedFiles.map(fs => zippedFilesArea.appendText(fs + "\n"))
 					}
 					
@@ -102,4 +104,5 @@ object TestGui {
 		app.main(args)
 		
 	}
+	*/
 }

@@ -4,7 +4,7 @@ assemblySettings
 
 name := "PST Zipper"
 organization := "org.grobster"
-version := "1.0.3"
+version := "1.0.6"
 scalaVersion := "2.12.0-M4"
 
 libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"

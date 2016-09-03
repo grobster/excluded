@@ -6,7 +6,9 @@ package util
   * or not by another application.  If the it is not locked, the PST file
   * will be compressed and saved to location specified by user.
   * @author Jeffery Quarles
-  * @version 1.0.3
+  * @version 1.0.6
+  * In version 1.0.5, added a dialogue box to show that the program has finished.
+  * In version 1.0.6, I added ability to save found PST file names to a configuration file
   */
 object FileFinder {
 	def main(args: Array[String]): Unit = {
@@ -16,6 +18,7 @@ object FileFinder {
 		import com.grobster.util._
 		import util.Backup._
 		import javax.swing._
+		import scala.io._
 		
 		JOptionPane.showMessageDialog(null, "Time to backup your PST files. Close Outlook before proceeding.");
 		
@@ -28,14 +31,28 @@ object FileFinder {
 		println("the backup location: " + backLocation)
 		
 		val userProfile = System.getProperty("user.home") //creates path to user's profile
+		val fs = System.getProperty("file.separator")
+		
+		//create program directory.  used to store config info
+		val programDirectory = Paths.get(userProfile + fs + "PST_FINDER")
+		Try(Files.createDirectory(programDirectory))
+		
+		val locatedPSTFile = programDirectory.resolve(Paths.get("located_pst_files.txt"))
+		
+		if(Files.notExists(locatedPSTFile)) Try(Files.createFile(locatedPSTFile)) // creates file used to store PST file locations
+		println(locatedPSTFile)
 		
 		for(drive <- localDrives) {
 			if(drive.toString == "C:\\") { // checked for every drive listed--unnecessary will re-evaluate this code
-				Backup.safeZip(Paths.get(userProfile), ".pst", backLocation)
+				val ulf = locateUnlockedFiles(Paths.get(userProfile), ".pst")
+				Backup.safeZip(ulf, backLocation)
+				sequenceToFile(ulf, locatedPSTFile)
 			} else {
-				Backup.safeZip(drive, ".pst", backLocation)
+				val rulf = locateUnlockedFiles(drive, ".pst")
+				Backup.safeZip(rulf, backLocation)
+				//sequenceToFile(rulf, locatedPSTFile)
 			}
 		}
-		
+		JOptionPane.showMessageDialog(null, "PST files have been zipped.");
 	}
 }

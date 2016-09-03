@@ -522,6 +522,22 @@ It returns either the new Path location or an Exception if thrown.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="util.Backup#locateUnlockedFiles" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="locateUnlockedFiles(dir:java.nio.file.Path,fileEndingFilter:String):scala.collection.parallel.immutable.ParSeq[java.nio.file.Path]"></a><a id="locateUnlockedFiles(Path,String):ParSeq[Path]"></a>
+      <span class="permalink">
+      <a href="../util/Backup$.html#locateUnlockedFiles(dir:java.nio.file.Path,fileEndingFilter:String):scala.collection.parallel.immutable.ParSeq[java.nio.file.Path]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">locateUnlockedFiles</span><span class="params">(<span name="dir">dir: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="fileEndingFilter">fileEndingFilter: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.parallel.immutable.ParSeq">ParSeq</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -587,9 +603,9 @@ It returns either the new Path location or an Exception if thrown.
       
       
     </li><li name="util.Backup#safeZip" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit"></a><a id="safeZip(Path,String,Path)(String):Unit"></a>
+      <a id="safeZip(parList:scala.collection.parallel.immutable.ParSeq[java.nio.file.Path],zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit"></a><a id="safeZip(ParSeq[Path],Path)(String):Unit"></a>
       <span class="permalink">
-      <a href="../util/Backup$.html#safeZip(dir:java.nio.file.Path,fileEndingFilter:String,zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit" title="Permalink">
+      <a href="../util/Backup$.html#safeZip(parList:scala.collection.parallel.immutable.ParSeq[java.nio.file.Path],zipLocation:java.nio.file.Path)(implicitzipFileEnding:String):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -598,7 +614,7 @@ It returns either the new Path location or an Exception if thrown.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">safeZip</span><span class="params">(<span name="dir">dir: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="fileEndingFilter">fileEndingFilter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="zipLocation">zipLocation: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="zipFileEnding">zipFileEnding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">safeZip</span><span class="params">(<span name="parList">parList: <span class="extype" name="scala.collection.parallel.immutable.ParSeq">ParSeq</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="zipLocation">zipLocation: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="zipFileEnding">zipFileEnding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <p class="shortcomment cmt">This function takes a directory and its filter file type and returns
@@ -623,6 +639,22 @@ specified in zipLocation.</p>
  It is a recursive function that will search a directory for files.
  It is tail safe.
 </p></div></div>
+    </li><li name="util.Backup#sequenceToFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sequenceToFile[A](seq:scala.collection.parallel.immutable.ParSeq[A],writeToPath:java.nio.file.Path):Unit"></a><a id="sequenceToFile[A](ParSeq[A],Path):Unit"></a>
+      <span class="permalink">
+      <a href="../util/Backup$.html#sequenceToFile[A](seq:scala.collection.parallel.immutable.ParSeq[A],writeToPath:java.nio.file.Path):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sequenceToFile</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="seq">seq: <span class="extype" name="scala.collection.parallel.immutable.ParSeq">ParSeq</span>[<span class="extype" name="util.Backup.sequenceToFile.A">A</span>]</span>, <span name="writeToPath">writeToPath: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

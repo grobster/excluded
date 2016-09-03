@@ -3,6 +3,8 @@ package util
 import java.io._
 import java.nio.file._
 import scala.annotation._
+import scala.collection.parallel.immutable.ParSeq
+import com.grobster.util._
 
 object Backup {
 	/**
@@ -83,13 +85,25 @@ object Backup {
 	  * a compressed file of type specified in zipFileEnding to the location
 	  * specified in zipLocation.
 	  */
-	def safeZip(dir: Path, fileEndingFilter: String, zipLocation: Path)(implicit zipFileEnding: String): Unit = {
-		import com.grobster.util._
-		val onlyFileType = scan(dir).par.filter(_.toString.endsWith(fileEndingFilter))
-		val unlockedFiles = onlyFileType.par.filter(fp => MyFiles.isNotLocked(fp.toFile))
-		unlockedFiles.par.map(f => MyZipper.zipFile(f.toString, zipLocation.toString + System.getProperty("file.separator") + 
+	def safeZip(parList: ParSeq[Path], zipLocation: Path)(implicit zipFileEnding: String): Unit = {
+		parList.par.map(f => MyZipper.zipFile(f.toString, zipLocation.toString + System.getProperty("file.separator") + 
 			MyFiles.stripExtension(f.getFileName.toString) + zipFileEnding))
 	}
 	
 	implicit val zipEnding = ".zip"
+	
+	def locateUnlockedFiles(dir: Path, fileEndingFilter: String): ParSeq[Path] = {
+		val onlyFileType = scan(dir).par.filter(_.toString.endsWith(fileEndingFilter))
+		onlyFileType.par.filter(fp => MyFiles.isNotLocked(fp.toFile))
+	}
+	
+	def sequenceToFile[A](seq: ParSeq[A], writeToPath: Path): Unit = {
+		val fw = new FileWriter(writeToPath.toFile, true)
+		val bw = new BufferedWriter(fw)
+		val pw = new PrintWriter(bw)
+		Try {
+			seq.map(fp => pw.println(fp.toString))
+			pw.close
+		}
+	}
 }
