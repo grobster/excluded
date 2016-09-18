@@ -4,16 +4,16 @@
 	<info
 		organisation="org.grobster"
 		module="pst-zipper_2.12.0-M4"
-		revision="1.0.6"
+		revision="1.0.7"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160902055430"/>
+		date="20160905112534"/>
 	<dependencies>
 		<module organisation="org.scalafx" name="scalafx_2.12.0-M4">
 			<revision name="8.0.92-R10" status="release" pubdate="20160422171334" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalafx.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="BSD" url="https://github.com/scalafx/scalafx/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3091" time="0" location="C:\Users\quarl\.ivy2\cache\org.scalafx\scalafx_2.12.0-M4\ivy-8.0.92-R10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.12.0-M4/8.0.92-R10/scalafx_2.12.0-M4-8.0.92-R10.pom"/>
-				<caller organisation="org.grobster" name="pst-zipper_2.12.0-M4" conf="compile, runtime" rev="8.0.92-R10" rev-constraint-default="8.0.92-R10" rev-constraint-dynamic="8.0.92-R10" callerrev="1.0.6"/>
+				<caller organisation="org.grobster" name="pst-zipper_2.12.0-M4" conf="compile, runtime" rev="8.0.92-R10" rev-constraint-default="8.0.92-R10" rev-constraint-dynamic="8.0.92-R10" callerrev="1.0.7"/>
 				<artifacts>
 					<artifact name="scalafx_2.12.0-M4" type="jar" ext="jar" status="no" details="" size="2632978" time="0" location="C:\Users\quarl\.ivy2\cache\org.scalafx\scalafx_2.12.0-M4\jars\scalafx_2.12.0-M4-8.0.92-R10.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.12.0-M4/8.0.92-R10/scalafx_2.12.0-M4-8.0.92-R10.jar"/>
@@ -37,7 +37,7 @@
 			<revision name="2.12.0-M4" status="release" pubdate="20160401174620" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.0-M4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2694" time="0" location="C:\Users\quarl\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.0-M4/scala-library-2.12.0-M4.pom"/>
-				<caller organisation="org.grobster" name="pst-zipper_2.12.0-M4" conf="compile, runtime" rev="2.12.0-M4" rev-constraint-default="2.12.0-M4" rev-constraint-dynamic="2.12.0-M4" callerrev="1.0.6"/>
+				<caller organisation="org.grobster" name="pst-zipper_2.12.0-M4" conf="compile, runtime" rev="2.12.0-M4" rev-constraint-default="2.12.0-M4" rev-constraint-dynamic="2.12.0-M4" callerrev="1.0.7"/>
 				<caller organisation="org.scalafx" name="scalafx_2.12.0-M4" conf="default, compile, runtime, master" rev="2.12.0-M4" rev-constraint-default="2.12.0-M4" rev-constraint-dynamic="2.12.0-M4" callerrev="8.0.92-R10"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.0-M4" rev-constraint-default="2.12.0-M4" rev-constraint-dynamic="2.12.0-M4" callerrev="2.12.0-M4"/>
 				<artifacts>

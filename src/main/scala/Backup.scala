@@ -5,6 +5,7 @@ import java.nio.file._
 import scala.annotation._
 import scala.collection.parallel.immutable.ParSeq
 import com.grobster.util._
+import scala.io._
 
 object Backup {
 	/**
@@ -40,7 +41,7 @@ object Backup {
 	/**
 	  * Backup folder name
 	  */
-	def backupToDirectory: String = "excluded_backups"
+	def backupToDirectory: String = "My_PST_Backups"
 	
 	/**
 	  * Creates backup directory on C drive.
@@ -90,20 +91,38 @@ object Backup {
 			MyFiles.stripExtension(f.getFileName.toString) + zipFileEnding))
 	}
 	
+	/**
+	  * Puts the .zip file ending in scope.
+	  */
 	implicit val zipEnding = ".zip"
 	
+	/**
+	  * This function takes a java.nio.file.Path and file ending filter and
+	  * returns a ParSeq that contains java.nio.file Paths that are not
+	  * locked or in use by the another program or the operating system.
+	  */
 	def locateUnlockedFiles(dir: Path, fileEndingFilter: String): ParSeq[Path] = {
 		val onlyFileType = scan(dir).par.filter(_.toString.endsWith(fileEndingFilter))
 		onlyFileType.par.filter(fp => MyFiles.isNotLocked(fp.toFile))
 	}
 	
+	/** 
+	  * This function takes a ParSeq[A] and java.nio.file.Path and
+	  * writes the contents of the ParSeq[A] to the path.
+	  */
 	def sequenceToFile[A](seq: ParSeq[A], writeToPath: Path): Unit = {
+		val source = Source.fromFile(writeToPath.toFile).getLines.toList // get lines as List[String]
 		val fw = new FileWriter(writeToPath.toFile, true)
 		val bw = new BufferedWriter(fw)
 		val pw = new PrintWriter(bw)
 		Try {
-			seq.map(fp => pw.println(fp.toString))
-			pw.close
+			seq.map(fp => if(!source.contains(fp.toString)) pw.println(fp.toString)) // checks to see if file is already in file.
+			pw.close                                                                 //if not, write it to file
 		}
 	}
+	
+	/**
+	  * Creates object that holds file name and its size.
+	  */
+	case class FileAndSize(fileName: String, fileSize: Long)
 }

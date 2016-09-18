@@ -172,7 +172,28 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="util.Backup.FileAndSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FileAndSizeextendsProductwithSerializable"></a><a id="FileAndSize:FileAndSize"></a>
+      <span class="permalink">
+      <a href="../util/Backup$.html#FileAndSizeextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Creates object that holds file name and its size." href="Backup$$FileAndSize.html">
+              <span class="name">FileAndSize</span>
+            </a><span class="params">(<span name="fileName">fileName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fileSize">fileSize: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates object that holds file name and its size.</p>
+    </li></ol>
+            </div>
 
         
 
@@ -537,7 +558,9 @@ It returns either the new Path location or an Exception if thrown.
         <span class="name">locateUnlockedFiles</span><span class="params">(<span name="dir">dir: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="fileEndingFilter">fileEndingFilter: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.parallel.immutable.ParSeq">ParSeq</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">This function takes a java.nio.file.Path and file ending filter and
+returns a ParSeq that contains java.nio.file Paths that are not
+locked or in use by the another program or the operating system.</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -654,7 +677,8 @@ specified in zipLocation.</p>
         <span class="name">sequenceToFile</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="seq">seq: <span class="extype" name="scala.collection.parallel.immutable.ParSeq">ParSeq</span>[<span class="extype" name="util.Backup.sequenceToFile.A">A</span>]</span>, <span name="writeToPath">writeToPath: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">This function takes a ParSeq[A] and java.nio.file.Path and
+writes the contents of the ParSeq[A] to the path.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -768,7 +792,7 @@ specified in zipLocation.</p>
         <span class="name">zipEnding</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Puts the .zip file ending in scope.</p>
     </li>
               </ol>
             </div>

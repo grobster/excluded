@@ -9,6 +9,8 @@ package util
   * @version 1.0.6
   * In version 1.0.5, added a dialogue box to show that the program has finished.
   * In version 1.0.6, I added ability to save found PST file names to a configuration file
+  * In version 1.0.7, I added ability to check if file path has already been added to the configuration file.
+  * If not, it writes its name to the file.
   */
 object FileFinder {
 	def main(args: Array[String]): Unit = {
@@ -50,7 +52,7 @@ object FileFinder {
 			} else {
 				val rulf = locateUnlockedFiles(drive, ".pst")
 				Backup.safeZip(rulf, backLocation)
-				//sequenceToFile(rulf, locatedPSTFile)
+				sequenceToFile(rulf, locatedPSTFile)
 			}
 		}
 		JOptionPane.showMessageDialog(null, "PST files have been zipped.");
