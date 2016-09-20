@@ -51,7 +51,9 @@ object PstFinder {
 				val filesInMap = pstLocatedUserProfileOnC.map { f =>
 					if(fileMap.contains(f.toString)) { //checks if file is already in map
 						if(Files.size(f) != fileMap(f.toString)) { //if it is, then check if file size is different
-							
+							MyZipper.zipFile(f.toString, backupLocation.toString + fs +
+								Data.stripFileExtension(Some(f.getFileName.toString)).getOrElse(f.toString) + zipEnding) //dupe code
+								updateMapFile(f, fileMap, backupLocation)
 						}
 					}
 				}
@@ -59,6 +61,16 @@ object PstFinder {
 			} else {
 			
 			}
+		}
+	}
+	
+	def updateMapFile(path: Path, existingMap: Map[String, Long], serializedFile: Path): Unit = {
+		if(existingMap.contains(path.toString)) {
+			val updatedMap = existingMap.filterNot(t => t._1 == path.toString) ++ Map(path.toString -> Files.size(path))
+			Data.mapToFile(updatedMap, serializedFile)
+		} else {
+			val itemNotInMapMap = existingMap ++ Map(path.toString -> Files.size(path))
+			Data.mapToFile(itemNotInMapMap, serializedFile)
 		}
 	}
 	
