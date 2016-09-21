@@ -1,6 +1,6 @@
 [0m[[0minfo[0m] [0mIncluding from cache: scalafx_2.12.0-M4-8.0.92-R10.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: scala-reflect-2.12.0-M4.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.12.0-M4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-reflect-2.12.0-M4.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: jfxrt.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
@@ -10,7 +10,8 @@
 [0m[[33mwarn[0m] [0mMerging 'META-INF\MANIFEST.MF' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 2 files[0m
 [0m[[33mwarn[0m] [0mStrategy 'rename' was applied to a file[0m
-[0m[[0minfo[0m] [0mPackaging C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\PST Zipper-assembly-1.0.7.jar ...[0m
+[0m[[0minfo[0m] [0mSHA-1: cb9c3fe83b27fe36bc01bc0eae93ca084443aa80[0m
+[0m[[0minfo[0m] [0mPackaging C:\Users\quarl\Documents\GitHub\excluded\target\scala-2.12.0-M4\PST Zipper-assembly-1.0.8.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	com\grobster\util\FileNamer.class[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\com\grobster\util\FileNamer.class[0m
@@ -23180,10 +23181,18 @@
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\Backup$FileAndSize.class[0m
 [0m[[0mdebug[0m] [0m	util\Backup.class[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\Backup.class[0m
+[0m[[0mdebug[0m] [0m	util\Data$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\Data$.class[0m
+[0m[[0mdebug[0m] [0m	util\Data.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\Data.class[0m
 [0m[[0mdebug[0m] [0m	util\FileFinder$.class[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\FileFinder$.class[0m
 [0m[[0mdebug[0m] [0m	util\FileFinder.class[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\FileFinder.class[0m
+[0m[[0mdebug[0m] [0m	util\PstFinder$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\PstFinder$.class[0m
+[0m[[0mdebug[0m] [0m	util\PstFinder.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\5a5bc873245887e8a0b57569bbd27bc0832abc4e_dir\util\PstFinder.class[0m
 [0m[[0mdebug[0m] [0m	version.rc[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\quarl\Documents\GitHub\excluded\target\streams\$global\assemblyOption\$global\streams\assembly\eb2566c490697cc0450fb92f8a336cf1865812bf_d7da5de37fc694a94bdb4e993607c680ce641029\version.rc[0m
 [0m[[0minfo[0m] [0mDone packaging.[0m
